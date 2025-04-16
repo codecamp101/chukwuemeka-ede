@@ -1,0 +1,140 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: system-ui;
+    font-size: 100%;
+    font-weight: 70;
+    flex-direction: column;
+    user-select: none;
+}
+#banner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    font-weight: bold;
+    animation: blink 2s 2s infinite;
+}
+@keyframes blink{
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+#banner > p::first-letter{
+    color: red;
+}
+#banner > p::third-letter{
+    color: yellow;
+}
+#word{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    /* border: 1px solid blue; */
+    position: relative;
+    gap: 1em;
+    margin: 5em 0;
+    
+}
+.chevron{
+    border: none;
+    background: none;
+    outline: none;
+    height: 5em;
+    width: 5em;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: box-shadow .5s;
+    cursor: pointer;
+   
+}
+.chevron:hover {
+    box-shadow: 0px 3px 5px #ccc;
+}
+.tile{ 
+    font-weight: 700;
+    font-size: 400%;
+    border-radius: 7px;
+    padding: .5em;
+    font-family: monospace;
+    box-shadow: 1px 3px 3px gainsboro;
+   
+    
+}
+#backward{
+    background-image: url('chevron-back-outline.svg');
+    background-size: 5em;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 3em;
+   
+}
+#forward{
+    background-image: url('chevron-forward-outline.svg');
+    background-size: 5em;
+    background-position: center;
+    background-repeat: no-repeat;
+    right: 3em;
+}
+
+button{
+    background: none;
+    outline: none;
+}
+
+#hint{
+    padding: 1em;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1em;
+}
+#bulb{
+    background-image: url(bulb-outline.svg);
+    height: 3em;
+    width: 3em;
+    /* border: 1px solid red; */
+}
+#txt{
+    font-size: 150%;
+    font-weight: 500;
+    font-family: monospace;
+    /* border: 1px solid red; */
+}
+#author{
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#emeka{
+    color: red;
+
+}
+#ugo{
+    color: blue;
+}
+#olu{
+    color: yellow;
+}
+#udo{
+    color: orange;
+}
+#aka{
+    color: purple;
+}
+#iru{
+    color: mediumaquamarine;
+}
