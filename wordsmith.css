@@ -140,21 +140,20 @@ button {
 #checkBtn {
     border-radius: 2em;
     /* border: 1px solid red; */
-    background-color: #6211a3;
-    background-image: url();
+    background-color: #8b008b;
     display: flex;
     align-items: center;
     padding-left: 2em;
     letter-spacing: 3px;
+
 }
 
-#checkBtn > span {
-    /* height: 4em;
-    width: 4em; */
+#checkBtn > span { 
     color: #fff;
     font-size: 110%;
     font-weight: 500;
     background-repeat: no-repeat;
+    /* background-position: center; */
 }
 
 #checkBtn > i {
@@ -162,6 +161,8 @@ button {
     width: 4em;
     /* border: 1px solid red; */
     background-image: url(arrow-forward-outline.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #cup {

@@ -42,7 +42,7 @@
     position: relative;
     gap: 1em;
     margin: 5em 0;
-    
+    position: relative;
 }
 .chevron{
     border: none;
@@ -93,7 +93,7 @@ button{
 }
 
 #hint{
-    padding: 1em;
+    /* padding: 1em; */
     /* border: 1px solid red; */
     display: flex;
     align-items: center;
@@ -137,4 +137,18 @@ button{
 }
 #iru{
     color: mediumaquamarine;
+}
+button {
+    background: none;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+#restartBtn {
+    height: 4em;
+    width: 4em;
+    /* border: 1px solid blue; */
+    transition: box-shadow .5s;
+    border-radius: 7px;
+    background-image: url(refresh-outline.svg);
 }
