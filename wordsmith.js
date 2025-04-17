@@ -1,9 +1,21 @@
 const hintBtn = document.querySelector('#hintBtn');
 const txt = document.querySelector('#txt');
-    hintBtn.addEventListener('click', ()=> {
+const checkBtn = document.querySelector('#checkBtn');
+
+let score = 0;
+checkBtn.addEventListener('click', () => {
+    document.querySelector('#cup >i').textContent = score;
+    score += 5;
+    document.querySelector('#action').style.backgroundImage = `url('confetti.gif')`;
+    const tid = setTimeout(() => {
+        document.querySelector('#action').style.backgroundImage = 'none';
+        clearTimeout(tid);
+    }, 2000);
+});
+hintBtn.addEventListener('click', ()=> {
     // txt.textContent = 'I CHANGED YOU!!!!';
     writeTxt();
-})
+});
 function writeTxt () {
     const text = 'to walk unsteadily, as like a baby';
     txt.textContent = '';

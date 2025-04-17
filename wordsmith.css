@@ -135,6 +135,10 @@ button {
     margin: 0 auto;
     /* border: 1px solid red; */
     padding: 1em;
+    background-image: url(error_fawzi_mourad.gif);
+    background-position: 70%;
+    background-size: 30%;
+    background-repeat: no-repeat;
 }
 
 #checkBtn {
